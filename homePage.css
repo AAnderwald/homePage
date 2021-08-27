@@ -1,0 +1,58 @@
+body {
+    background-color: #385c50;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* top div  */
+
+    #mainDiv{
+        display: grid;
+    }
+
+    #headShotDiv {
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 60px;
+    }
+
+    #headShot {
+        border-radius: 50%;
+        height: 300px;
+        width: auto;
+    }
+
+    #infoDiv{
+        height: 200px;
+        text-align: center;
+    }
+
+/* middle div */
+
+    #middleDiv {
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+/* bottom div */
+
+    #pagesDiv{
+        height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #233d34;
+    }
+
+    #githubA{
+        margin-right: 50px;
+        color: #f0ffff;
+    }
+    #linkedinA{
+        margin-left: 50px;
+        color: #f0ffff;
+    }
