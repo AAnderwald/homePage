@@ -5,11 +5,9 @@
  
  html {
     min-height: 100vh;
-    display: block;
  }
 
 body {
-    background-color: #385c50;
     font-family: 'Montserrat', sans-serif;
     color: #f0ffff;
 }
@@ -20,71 +18,80 @@ p {
 
 /* top div  */
 
+    #mainDiv {
+        background-color: #385c50;
+        width: 100%;
+        position: absolute;
+    }
+
     #headShotDiv {
-        height: 300px;
+        height:320px;
         display: flex;
-        align-items: center;
+        margin-top: 0px;
         justify-content: center;
-        margin-top: 40px;
     }
 
     #headShot {
+        margin-top: 50px;
         border-radius: 50%;
-        height: 300px;
-        width: auto;
+        height: 200px;
     }
 
-    #infoDiv{
-        height: 200px;
-        text-align: center;
+    .infoDiv{
+        height: 120px;
+        display: flex;
+        justify-content: center;
     }
 
 /* middle div */
 
     #middleDiv {
-        height: 100px;
+        height: 140px;
         display: flex;
+        position: absolute;
+        width: 100%;
         align-items: center;
         justify-content: center;
+        background-color: #385c50;
+        bottom: 100px
     }
 
-
-/* contact div  */
-    #contactDiv {
-        height: 100px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #contact {
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 20px;
-    }
 
 /* bottom div */
 
     #pagesDiv{
         height: 100px;
         display: flex;
-        align-items: center;
-        justify-content: center;
         background-color: #233d34;
+        position: absolute;
+        bottom: 0;
         width: 100%;
-        ;
+        justify-content: center;
+        align-items: center;
     }
 
     #githubA{
-        margin-right: 100px;
         color: #f0ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact {
+        color: #f0ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 120px;
+        margin-right: 120px;
+        
     }
 
     #linkedinA{
-        margin-left: 100px;
         color: #f0ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     @media (max-width: 720px) {  /* rule applies if greater than 720px*/
