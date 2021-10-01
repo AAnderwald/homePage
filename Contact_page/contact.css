@@ -1,0 +1,11 @@
+body {
+    background-color: #385c50;
+    font-family: 'Montserrat', sans-serif;
+    color: #f0ffff;
+}
+
+/* top div  */
+
+#mainDiv{
+    display: grid;
+}

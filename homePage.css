@@ -1,20 +1,31 @@
+*  {
+    letter-spacing: 1px;
+    box-sizing: border-box;
+ }
+ 
+ html {
+    min-height: 100vh;
+    display: block;
+ }
+
 body {
     background-color: #385c50;
     font-family: 'Montserrat', sans-serif;
+    color: #f0ffff;
+}
+
+p {
+    font-size: 20px;
 }
 
 /* top div  */
-
-    #mainDiv{
-        display: grid;
-    }
 
     #headShotDiv {
         height: 300px;
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 60px;
+        margin-top: 40px;
     }
 
     #headShot {
@@ -31,28 +42,55 @@ body {
 /* middle div */
 
     #middleDiv {
-        height: 200px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
+
+/* contact div  */
+    #contactDiv {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contact {
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
 
 /* bottom div */
 
     #pagesDiv{
-        height: 200px;
+        height: 100px;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #233d34;
+        width: 100%;
+        ;
     }
 
     #githubA{
-        margin-right: 50px;
+        margin-right: 100px;
         color: #f0ffff;
     }
+
     #linkedinA{
-        margin-left: 50px;
+        margin-left: 100px;
         color: #f0ffff;
     }
+
+    @media (max-width: 720px) {  /* rule applies if greater than 720px*/
+        .buttonDiv {
+            min-height: 350px;      /*overwrites the 100px*/
+            flex-direction: column;
+            align-items: center;
+        }
+     }
