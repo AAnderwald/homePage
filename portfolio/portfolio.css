@@ -2,44 +2,35 @@
     letter-spacing: 1px;
     box-sizing: border-box;
  }
+ 
+ html {
+    min-height: 100vh;
+ }
 
 body {
-    background-color: #385c50;
     font-family: 'Montserrat', sans-serif;
     color: #f0ffff;
+    background-color: #385c50;
 }
 
-#topDiv {
-    text-align: center;
-    margin-top: 80px;
-}
-
-#githubA, #linkedinA {
+#trueCodersProject  {
     color: #f0ffff;
+    align-items: center;
+    justify-content: center;
 }
 
-#contactDiv2 {
-    position: relative;
+#memoryGameOne  {
+    color: #f0ffff;
+    align-items: center;
+    justify-content: center;
 }
 
-
-#emailDiv {
-    margin-top: 30px;
-    margin-left: 30px;
-    position: absolute;
+#recipeIndex  {
+    color: #f0ffff;
+    align-items: center;
+    justify-content: center;
 }
 
-#githubADiv{
-    margin-top: 120px;
-    margin-left: 30px;
-    position: absolute;
-}
-
-#linkedinADiv {
-    margin-top: 210px;
-    margin-left: 30px;
-    position: absolute;
-}
 
 /* home button div  */
 
@@ -78,3 +69,11 @@ body {
      border-radius: 10px;
     text-decoration: none;
 }
+
+@media (max-width: 720px) {  /* rule applies if greater than 720px*/
+    #pagesDiv {
+        min-height: 100px;      /*overwrites the 100px*/
+        flex-direction: column;
+        align-items: center;
+    }
+ }

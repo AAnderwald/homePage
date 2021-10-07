@@ -10,6 +10,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     color: #f0ffff;
+    background-color: #385c50;
 }
 
 p {
@@ -53,9 +54,15 @@ p {
         align-items: center;
         justify-content: center;
         background-color: #385c50;
-        bottom: 100px
+        bottom: 100px;
     }
 
+    #portfolio {
+        color: #f0ffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
 /* bottom div */
 
@@ -72,14 +79,12 @@ p {
 
     #githubA{
         color: #f0ffff;
-        display: flex;
         align-items: center;
         justify-content: center;
     }
 
     #contact {
         color: #f0ffff;
-        display: flex;
         align-items: center;
         justify-content: center;
         margin-left: 120px;
@@ -89,14 +94,13 @@ p {
 
     #linkedinA{
         color: #f0ffff;
-        display: flex;
         align-items: center;
         justify-content: center;
     }
 
     @media (max-width: 720px) {  /* rule applies if greater than 720px*/
-        .buttonDiv {
-            min-height: 350px;      /*overwrites the 100px*/
+        #pagesDiv {
+            min-height: 100px;      /*overwrites the 100px*/
             flex-direction: column;
             align-items: center;
         }
