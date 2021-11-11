@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memoryGame.css">
+    <script src="memoryGame.js" async></script>  <!-- tells html load JS file same times as the html file  -->
+                                                                        <!-- if page hasn't loaded yet wait for the page to load before we run the code -->
+    <title> Memory Game </title>
+  </head>
+
+
+  <body>
+    <div>
+      <nav class="navBarUl">
+          <ul>
+              <li ><a href="../games/gamePage.html"> Back to Games </a></li>
+          </ul>
+      </nav>
+  </div>
+
+  <div class="gameContainer">
+    <div class="data">
+    </div>
+  </div>
+
+  <div class="gameGrid">
+      <div class="popUp">
+        <button class="playAgain"> Play Again </button>
+      </div>
+  </div>
+
+
+  <h1 class="page-title">Memory Game</h1>
+  <div class="overlay-text visible"> 
+    <p id="small-margin">  How good is your memory? </em> </p>
+  </div>
+  <div id="game-over-text" class="overlay-text"> 
+    Game Over
+    <span class="overlay-text-small"> Click to restart</span>
+  </div>
+  <div id="victory-text" class="overlay-text"> 
+    Victory
+    <span class="overlay-text-small"> Click to restart</span>
+  </div>
+
+  <div class="game-container">
+      <div class="game-info-container"> 
+        <div class="game-info">
+          Time <span id="time-remaining">100</span>
+        </div>
+        <div class="game-info">
+          Flips <span id="flips">0</span>
+        </div>
+      </div>
+
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/1_donnakeep.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/1_donnakeep.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/2_rose.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/2_rose.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/3_marthakeep.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/3_marthakeep.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/4_mickeyuse.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/4_mickeyuse.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/5_river.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/5_river.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/6_jack.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/6_jack.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/7_sara.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/7_sara.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/8_daleks.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/8_daleks.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/9_sonicscrewdriver.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/9_sonicscrewdriver.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/10_insidetardis.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/10_insidetardis.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/11_jackie.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/11_jackie.jpg" alt="">
+          </div>
+        </div>
+        
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/12_drwho.jpg" alt="">
+          </div>
+        </div>
+        <div class="card ">
+          <div class="card-back card-face"> 
+              <img class="logo" src="./images/logodrwho.jpg" alt="">
+          </div>
+          <div class="card-front card-face">
+            <img class="card-value" src="./images/12_drwho.jpg" alt="">
+          </div>
+        </div>
+
+
+  </div>
+    
+  </body>
+</html>
